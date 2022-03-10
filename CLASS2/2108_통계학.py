@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 N = int(input())
 
 num = []
@@ -6,7 +9,6 @@ for i in range(N):
     num.append(int(input()))
 
 num.sort()
-#[-2, 1, 2, 3, 8]
     
 avg = round(sum(num) / N)
 
@@ -30,14 +32,10 @@ for i in range(-4001, 4001):
         
 mode.sort()
 
-print(mode)
-
 if len(mode) == 1:
     mode_num = mode[0]
 else:
     mode_num = mode[1]
-    
-    
     
 print(avg)
 print(mid)
