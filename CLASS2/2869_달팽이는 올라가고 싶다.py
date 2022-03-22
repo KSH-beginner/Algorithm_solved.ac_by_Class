@@ -1,6 +1,9 @@
 import sys
 input = sys.stdin.readline
+
+import math
 A, B, V = map(int, input().split())
 
 
-print(V-A + (A-B))
+day = (V - B) / (A - B)
+print(math.ceil(day))
